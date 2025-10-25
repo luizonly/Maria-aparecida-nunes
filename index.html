@@ -13,10 +13,11 @@
   <style>
     :root{--accent:#7e22ce;--muted:#6b7280;--bg:#faf5ff;--card:#ffffff}
     *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Montserrat', sans-serif;background:var(--bg);color:#111;line-height:1.6}
+    body{font-family:'Montserrat',sans-serif;background:var(--bg);color:#111;line-height:1.6}
 
     header {
-      background: linear-gradient(90deg,#581c87 0%, #7e22ce 60%), url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1400&q=60');
+      background: linear-gradient(90deg,#581c87 0%, #7e22ce 60%), 
+      url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1400&q=60');
       background-size: cover;
       background-position: center;
       color: #fff;
@@ -32,7 +33,7 @@
       inset: 0;
       background: rgba(0,0,0,0.25);
     }
-    header h1, header h2, header p { position: relative; z-index: 1; }
+    header h1, header h2, header p, header a { position: relative; z-index: 1; }
     h1{font-size:36px;margin-bottom:6px;font-weight:700}
     h2.subtitle{font-size:22px;color:#f0eaff;margin-bottom:20px;font-weight:400}
     p.lead{color:#f0eaff;font-size:16px;font-weight:400}
@@ -45,17 +46,16 @@
       display:flex;
       flex-direction:column;
       justify-content:space-between;
-      min-height:100%;
-      background:linear-gradient(145deg,#ffffff,#fdfaff);
-      border-radius:20px;
-      padding:30px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.08);
-      transition:transform .3s ease,box-shadow .3s ease,opacity .6s ease;
+      background:var(--card);
+      border-radius:16px;
+      padding:28px;
+      box-shadow:0 6px 22px rgba(8,15,30,0.08);
+      transition:transform .6s ease,box-shadow .6s ease,opacity .6s ease;
       opacity:0;
-      transform:translateY(20px)
+      transform:translateY(20px);
     }
     .card.visible{opacity:1;transform:translateY(0)}
-    .card:hover{transform:translateY(-12px);box-shadow:0 16px 40px rgba(0,0,0,0.15)}
+    .card:hover{transform:translateY(-8px);box-shadow:0 10px 30px rgba(0,0,0,0.12)}
     h2{margin-bottom:14px;color:var(--accent)}
     .services-list li{margin:10px 0;list-style:disc inside;color:#444}
 
@@ -95,7 +95,7 @@
 
     footer{text-align:center;padding:30px 0;color:var(--muted);font-size:14px}
 
-    .whatsapp-btn,.cta-btn{
+    .whatsapp-btn{
       position:fixed;
       bottom:22px;
       right:22px;
@@ -127,6 +127,13 @@
       transform:translateY(-3px);
       box-shadow:0 6px 18px rgba(0,0,0,0.15);
     }
+
+    /* Responsividade */
+    @media (max-width:768px){
+      h1{font-size:30px}
+      .grid{flex-direction:column;align-items:center}
+      header{padding:80px 16px}
+    }
   </style>
 </head>
 <body>
@@ -140,7 +147,9 @@
   <main>
     <section class="grid">
       <div class="card about">
-        <div class="avatar"><img src="img/maria-aparecida.png" alt="Maria Aparecida Nunes"></div>
+        <div class="avatar">
+          <img src="maria-aparecida.png" alt="Maria Aparecida Nunes">
+        </div>
         <h2>Sobre Maria</h2>
         <p>Maria Aparecida Nunes atua há anos como preposta em audiências trabalhistas, representando empresas com ética, clareza e postura técnica. Serviços prestados preferencialmente em São Paulo, oferecendo segurança e credibilidade na defesa dos interesses do cliente.</p>
         <a href="#contato-section" class="service-btn">Agende uma Consultoria</a>
