@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Maria Aparecida Nunes — Preposto Advocaticio na Área Trabalhista</title>
-  <meta name="description" content="Maria Aparecida Nunes - Serviços profissionais de preposto advocatício em audiências trabalhistas, acompanhamento processual e consultoria prática para empresas e sindicatos, preferencialmente em São Paulo." />
-  <meta name="keywords" content="preposto, audiências trabalhistas, consultoria trabalhista, São Paulo, advocacia">
+  <title>Maria Aparecida Nunes — Preposto Advocaticio nas Áreas Trabalhista e Civil</title>
+  <meta name="description" content="Maria Aparecida Nunes - Serviços profissionais de preposto advocatício em audiências trabalhistas e cíveis, acompanhamento processual e consultoria prática para empresas e sindicatos, com atuação em Mogi das Cruzes e Alto Tietê." />
+  <meta name="keywords" content="preposto, audiências trabalhistas, audiências cíveis, consultoria jurídica, Mogi das Cruzes, Alto Tietê, advocacia">
 
-  <!-- Fonte premium -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -35,17 +34,23 @@
     }
     header h1, header h2, header p, header a { position: relative; z-index: 1; }
     h1{font-size:36px;margin-bottom:6px;font-weight:700}
-    h2.subtitle{font-size:22px;color:#f0eaff;margin-bottom:20px;font-weight:400}
-    p.lead{color:#f0eaff;font-size:16px;font-weight:400}
+    h2.subtitle{font-size:22px;color:#f0eaff;margin-bottom:12px;font-weight:400}
+    p.lead{color:#f0eaff;font-size:16px;font-weight:400;margin-bottom:20px}
 
     main{padding:60px 20px;max-width:1100px;margin:auto}
-    .grid{display:flex;flex-wrap:wrap;gap:25px;justify-content:center}
 
+    .grid{
+      display:flex;
+      flex-wrap:wrap;
+      gap:25px;
+      justify-content:center;
+      align-items:stretch;
+    }
     .card{
       flex:1 1 300px;
       display:flex;
       flex-direction:column;
-      justify-content:space-between;
+      justify-content:flex-start;
       background:var(--card);
       border-radius:16px;
       padding:28px;
@@ -53,11 +58,13 @@
       transition:transform .6s ease,box-shadow .6s ease,opacity .6s ease;
       opacity:0;
       transform:translateY(20px);
+      min-height:420px;
     }
     .card.visible{opacity:1;transform:translateY(0)}
     .card:hover{transform:translateY(-8px);box-shadow:0 10px 30px rgba(0,0,0,0.12)}
     h2{margin-bottom:14px;color:var(--accent)}
     .services-list li{margin:10px 0;list-style:disc inside;color:#444}
+    .card .service-btn{margin-top:auto}
 
     .about{text-align:center}
     .avatar{
@@ -74,8 +81,17 @@
     .section-title{text-align:center;margin:60px 0 30px;font-size:28px;color:#581c87}
 
     #contato-section{text-align:center;margin-top:50px}
-    #contato-section form{max-width:500px;margin:0 auto}
-    form input,form textarea{width:100%;padding:14px;border:1px solid #ddd;border-radius:12px;margin:10px 0;font-size:15px}
+    #contato-section form{max-width:500px;margin:0 auto; display:flex; flex-direction:column; gap:12px}
+    form input, form textarea{
+      width:100%;
+      padding:14px;
+      border:1px solid #ddd;
+      border-radius:12px;
+      font-size:15px;
+      resize:none;
+    }
+    form input, form textarea{height:50px}
+    form textarea{height:120px}
     form button{
       background:linear-gradient(135deg,#7e22ce,#a855f7);
       color:#fff;
@@ -128,7 +144,6 @@
       box-shadow:0 6px 18px rgba(0,0,0,0.15);
     }
 
-    /* Responsividade */
     @media (max-width:768px){
       h1{font-size:30px}
       .grid{flex-direction:column;align-items:center}
@@ -139,9 +154,9 @@
 <body>
   <header>
     <h1>Maria Aparecida Nunes</h1>
-    <h2 class="subtitle">Preposto Advocaticio na Área Trabalhista</h2>
-    <p class="lead">Atuação ágil e segura em audiências trabalhistas, preferencialmente em São Paulo. Representação técnica para empresas e empregadores.</p>
-    <a href="#contato-section" class="service-btn">Agende sua Consultoria</a>
+    <h2 class="subtitle">Preposto Advocaticio nas Áreas Trabalhista e Civil</h2>
+    <p class="lead">Atuação ágil e segura em audiências trabalhistas, preferencialmente em Mogi das Cruzes e região do Alto Tietê. Representação técnica para empresas e empregadores.</p>
+    <a href="#contato-section" class="service-btn">Agende sua Consulta Jurídica</a>
   </header>
 
   <main>
@@ -151,14 +166,14 @@
           <img src="maria-aparecida.png" alt="Maria Aparecida Nunes">
         </div>
         <h2>Sobre Maria</h2>
-        <p>Maria Aparecida Nunes atua há anos como preposta em audiências trabalhistas, representando empresas com ética, clareza e postura técnica. Serviços prestados preferencialmente em São Paulo, oferecendo segurança e credibilidade na defesa dos interesses do cliente.</p>
-        <a href="#contato-section" class="service-btn">Agende uma Consultoria</a>
+        <p>Maria Aparecida Nunes atua há anos como preposta em audiências trabalhistas e cíveis, representando empresas com ética, clareza e postura técnica. Serviços prestados em Mogi das Cruzes e região do Alto Tietê, oferecendo segurança e credibilidade na defesa dos interesses do cliente.</p>
+        <a href="#contato-section" class="service-btn">Agende sua Consulta Jurídica</a>
       </div>
 
       <div class="card">
         <h2>Serviços</h2>
         <ul class="services-list">
-          <li>Atuação como preposta em audiências trabalhistas</li>
+          <li>Atuação como preposta em audiências trabalhistas e cíveis</li>
           <li>Orientação prévia e preparação para depoimentos</li>
           <li>Organização de documentos e provas</li>
           <li>Relatórios detalhados pós-audiência</li>
@@ -170,8 +185,8 @@
         <h2>Vantagens</h2>
         <ul class="services-list">
           <li>Atuação profissional e discreta</li>
-          <li>Amplo conhecimento prático da Justiça do Trabalho</li>
-          <li>Disponibilidade regional flexível, preferencialmente em São Paulo</li>
+          <li>Amplo conhecimento prático da Justiça do Trabalho e Cível</li>
+          <li>Disponibilidade para Mogi das Cruzes e região do Alto Tietê</li>
           <li>Planos personalizados para escritórios e empresas</li>
         </ul>
         <a href="#contato-section" class="service-btn">Saiba Mais</a>
@@ -181,9 +196,9 @@
     <h2 class="section-title">Contato e Informações</h2>
     <section id="contato-section">
       <form onsubmit="handleSubmit(event)">
-        <input type="text" id="nome" placeholder="Seu nome" required />
-        <input type="email" id="email" placeholder="Seu e-mail" required />
-        <textarea id="mensagem" rows="4" placeholder="Mensagem / Data da audiência / Processo (opcional)"></textarea>
+        <input type="text" id="nome" placeholder="Nome completo" required />
+        <input type="text" id="local" placeholder="Local onde o serviço será prestado" required />
+        <textarea id="mensagem" rows="4" placeholder="Mensagem / Data da audiência / Número do processo (opcional)"></textarea>
         <button type="submit">Enviar mensagem</button>
         <p id="formMsg" style="margin-top:8px"></p>
       </form>
@@ -191,7 +206,7 @@
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Maria Aparecida Nunes — Preposto Advocaticio na Área Trabalhista. Todos os direitos reservados.</p>
+    <p>© <span id="year"></span> Maria Aparecida Nunes — Preposto Advocaticio nas Áreas Trabalhista e Civil. Todos os direitos reservados.</p>
   </footer>
 
   <a class="whatsapp-btn" href="https://wa.me/5511995741481" target="_blank" aria-label="Fale no WhatsApp">
@@ -203,16 +218,30 @@
 
     function handleSubmit(e){
       e.preventDefault();
-      const nome=document.getElementById('nome').value.trim();
-      const email=document.getElementById('email').value.trim();
-      const mensagem=document.getElementById('mensagem').value.trim();
-      const out=document.getElementById('formMsg');
-      if(!nome||!email){out.textContent='Preencha nome e e-mail.';out.style.color='red';return;}
-      out.textContent='Mensagem enviada! Em breve entraremos em contato.';
-      out.style.color='#7e22ce';
-      document.getElementById('nome').value='';
-      document.getElementById('email').value='';
-      document.getElementById('mensagem').value='';
+
+      const nome = document.getElementById('nome').value.trim();
+      const local = document.getElementById('local').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+      const out = document.getElementById('formMsg');
+
+      if(!nome || !local){
+        out.textContent = 'Preencha nome completo e local do serviço.';
+        out.style.color = 'red';
+        return;
+      }
+
+      const numeroWhatsApp = '5511995741481';
+      const texto = `Olá, tenho interesse em contratar os serviços.\n\nNome: ${nome}\nLocal: ${local}\nMensagem: ${mensagem}`;
+      const link = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+      document.getElementById('nome').value = '';
+      document.getElementById('local').value = '';
+      document.getElementById('mensagem').value = '';
+
+      out.textContent = 'Abrindo WhatsApp...';
+      out.style.color = '#7e22ce';
+
+      window.open(link, '_blank');
     }
 
     const cards=document.querySelectorAll('.card');
