@@ -144,10 +144,19 @@
       box-shadow:0 6px 18px rgba(0,0,0,0.15);
     }
 
+    /* ===== RESPONSIVO PARA CELULAR ===== */
     @media (max-width:768px){
-      h1{font-size:30px}
-      .grid{flex-direction:column;align-items:center}
-      header{padding:80px 16px}
+      h1{font-size:28px}
+      h2.subtitle{font-size:18px}
+      p.lead{font-size:14px}
+      header{padding:60px 16px 40px}
+      .grid{flex-direction:column;align-items:center;gap:18px}
+      .card{min-height:auto;padding:20px;width:90%}
+      .avatar{width:110px;height:110px}
+      form input, form textarea{height:auto;padding:12px;font-size:14px}
+      form textarea{height:100px}
+      form button{padding:12px;font-size:14px}
+      .whatsapp-btn{padding:10px}
     }
   </style>
 </head>
